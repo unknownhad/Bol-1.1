@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/img_row"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/label_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Picture"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/profile_img"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/label_picture"
+                android:src="@drawable/profileimg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/name_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_row"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" >
+
+            <TextView
+                android:id="@+id/name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Name"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/name_label"
+                android:background="#fff"
+                android:hint="Name"
+                android:minWidth="200dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/desc_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_row"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" >
+
+            <TextView
+                android:id="@+id/desc_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Description"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/desc_field"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/desc_label"
+                android:background="#fff"
+                android:hint="Description"
+                android:minWidth="250dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recording_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc_row"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:minWidth="100dp"
+                android:id="@+id/recording_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Record" />
+
+            <Button
+                android:minWidth="100dp"
+                android:id="@+id/stop_recording_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:text="Stop" />
+
+            <TextView
+                android:id="@+id/recording_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_layout"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recording_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    
+                    android:id="@+id/create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Create" />
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Cancel" />
+            </RelativeLayout>
+
+            
+    </RelativeLayout>
+
+</ScrollView>
